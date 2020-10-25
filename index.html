@@ -1,0 +1,2766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌豚 | ArknightsData | ppsingsongs | 学习项目</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div id="top-menu">
+        <a href="">
+            <div class="nav">Arknights Data</div>
+        </a>
+        <a href="">
+            <div class="nav">敌人档案</div>
+        </a>
+        <a href="">
+            <div class="nav">时装回廊</div>
+        </a>
+        <a href="">
+            <div class="nav">活动一览</div>
+        </a>
+        <a href="">
+            <div class="nav">道具资料</div>
+        </a>
+        <a href="">
+            <div class="nav">剧情记录</div>
+        </a>
+    </div>
+    <div id="section">
+        <!-- 干员列表头部 -->
+        <div id="title-container">
+            <div id="title">干员列表</div>
+        </div>
+        <!-- 干员tag界面 -->
+        <div id="tag-container">
+            <!-- 职业 -->
+            <div class="tag">
+                <div class="tag-branch">职业</div>
+                <button class="tag-button">先锋</button>
+                <button class="tag-button">近卫</button>
+                <button class="tag-button">狙击</button>
+                <button class="tag-button">重装</button>
+                <button class="tag-button">医疗</button>
+                <button class="tag-button">辅助</button>
+                <button class="tag-button">术师</button>
+                <button class="tag-button">特种</button>
+            </div>
+            <!-- 稀有度 -->
+            <div class="tag">
+                <div class="tag-branch">星级</div>
+                <button class="tag-button">1</button>
+                <button class="tag-button">2</button>
+                <button class="tag-button">3</button>
+                <button class="tag-button">4</button>
+                <button class="tag-button">5</button>
+                <button class="tag-button">6</button>
+            </div>
+            <!-- 近战远程 -->
+            <div class="tag">
+                <div class="tag-branch">位置</div>
+                <button class="tag-button">近战位</button>
+                <button class="tag-button">远程位</button>
+            </div>
+            <!-- 性别 -->
+            <div class="tag">
+                <div class="tag-branch">性别</div>
+                <button class="tag-button">男性</button>
+                <button class="tag-button">女性</button>
+                <button class="tag-button">其他</button>
+            </div>
+            <!-- 干员tag按钮界面 -->
+            <div class="tag">
+                <button class="tag-button" id="tag-click" onclick="show()">标签</button>
+                <!-- 点击显示隐藏div-->
+                <div id="tag-hide" style="display: none;">
+                    <button class="tag-button tag-button-4">快速复活</button>
+                    <button class="tag-button tag-button-4">费用回复</button>
+                    <button class="tag-button">治疗</button>
+                    <button class="tag-button">新手</button>
+                    <button class="tag-button">支援</button>
+                    <button class="tag-button">输出</button>
+                    <button class="tag-button">生存</button>
+                    <button class="tag-button">群攻</button>
+                    <button class="tag-button">防护</button>
+                    <button class="tag-button">减速</button>
+                    <button class="tag-button">削弱</button>
+                    <button class="tag-button">位移</button>
+                    <button class="tag-button">召唤</button>
+                    <button class="tag-button">爆发</button>
+                    <button class="tag-button">控场</button>
+                    <button class="tag-button">远程位</button>
+                    <button class="tag-button">近战位</button>
+                    <button class="tag-button tag-button-4">支援机械</button>
+                    <button class="tag-button tag-button-4">资深干员</button>
+                    <button class="tag-button tag-button-6">高级资深干员</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- 具体列表 -->
+        <div id="role-container">
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Blemishine.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">瑕光</div>
+                        <div class="role-item-name-en">Blemishine</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Aosta.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">奥斯塔</div>
+                        <div class="role-item-name-en">Aosta</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Whislash.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">鞭刃</div>
+                        <div class="role-item-name-en">Whislash</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Bubble.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">泡泡</div>
+                        <div class="role-item-name-en">Bubble</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Surtr.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">史尔特尔</div>
+                        <div class="role-item-name-en">Surtr</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Mint.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">薄绿</div>
+                        <div class="role-item-name-en">Mint</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_April.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">四月</div>
+                        <div class="role-item-name-en">April</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Arene.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">芳汀</div>
+                        <div class="role-item-name-en">Arene</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Eunectes.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">森蚺</div>
+                        <div class="role-item-name-en">Eunectes</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Touch.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">Touch</div>
+                        <div class="role-item-name-en">Touch</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Pith.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">Pith</div>
+                        <div class="role-item-name-en">Pith</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Tomimi.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">特米米</div>
+                        <div class="role-item-name-en">Tomimi</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Stormeye.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">Stormeye</div>
+                        <div class="role-item-name-en">Stormeye</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Flint.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">燧石</div>
+                        <div class="role-item-name-en">Flint</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Sharp.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">Sharp</div>
+                        <div class="role-item-name-en">Sharp</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Aciddrop.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">酸糖</div>
+                        <div class="role-item-name-en">Aciddrop</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Reserve\(Caster\).webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch" style="font-size: 16px;">预备干员-术师</div>
+                        <div class="role-item-name-en">Reserve(Caster)</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Reserve\(Logistic\).webp');">
+                    </div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch" style="font-size: 16px;">预备干员-后勤</div>
+                        <div class="role-item-name-en">Reserve(Logistic)</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Reserve\(Sniper\).webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch" style="font-size: 16px;">预备干员-狙击</div>
+                        <div class="role-item-name-en">Reserve(Sniper)</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Reserve\(Melee\).webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch" style="font-size: 16px;">预备干员-近战</div>
+                        <div class="role-item-name-en">Reserve(Melee)</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Thorns.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">棘刺</div>
+                        <div class="role-item-name-en">Thorns</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Andreana.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">安哲拉</div>
+                        <div class="role-item-name-en">Andreana</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Jaye.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">孑</div>
+                        <div class="role-item-name-en">Jaye</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">快速复活</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Scene.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">稀音</div>
+                        <div class="role-item-name-en">Scene</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">召唤</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Beeswax.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">蜜蜡</div>
+                        <div class="role-item-name-en">Beeswax</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Chiave.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">贾维</div>
+                        <div class="role-item-name-en">Chiave</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Suzuran.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">铃兰</div>
+                        <div class="role-item-name-en">Suzuran</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Folinic.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">亚叶</div>
+                        <div class="role-item-name-en">Folinic</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ayerscarpe.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">断崖</div>
+                        <div class="role-item-name-en">Ayerscarpe</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Click.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">卡达</div>
+                        <div class="role-item-name-en">Click</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Poca.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">早露</div>
+                        <div class="role-item-name-en">Poca</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Leonhardt.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">莱恩哈特</div>
+                        <div class="role-item-name-en">Leonhardt</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Absinthe.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">苦艾</div>
+                        <div class="role-item-name-en">Absinthe</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Podenco.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">波登可</div>
+                        <div class="role-item-name-en">Podenco</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Tsukinogi.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">月禾</div>
+                        <div class="role-item-name-en">Tsukinogi</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Asbestos.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">石棉</div>
+                        <div class="role-item-name-en">Asbestos</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Weedy.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">温蒂</div>
+                        <div class="role-item-name-en">Weedy</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner" style="background-image: url('source/character/headportrait/hp_W.webp');">
+                    </div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">W</div>
+                        <div class="role-item-name-en">W</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Elysium.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">极境</div>
+                        <div class="role-item-name-en">Elysium</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Thermal-EX.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch" style="font-size: 15px;">THERMAL-EX</div>
+                        <div class="role-item-name-en">Thermal-EX</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">支援机械</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Phantom.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">傀影</div>
+                        <div class="role-item-name-en">Phantom</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">快速复活</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Shamare.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">巫恋</div>
+                        <div class="role-item-name-en">Shamare</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Sideroca.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">铸铁</div>
+                        <div class="role-item-name-en">Sideroca</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Cutter.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">刻刀</div>
+                        <div class="role-item-name-en">Cutter</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Conviction.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">断罪者</div>
+                        <div class="role-item-name-en">Conviction</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Bagpipe.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">风笛</div>
+                        <div class="role-item-name-en">Bagpipe</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Sesa.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">慑砂</div>
+                        <div class="role-item-name-en">Sesa</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Bibeak.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">柏喙</div>
+                        <div class="role-item-name-en">Bibeak</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Utage.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">宴</div>
+                        <div class="role-item-name-en">Utage</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Purestream.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">清流</div>
+                        <div class="role-item-name-en">Purestream</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ceobe.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">刻俄柏</div>
+                        <div class="role-item-name-en">Ceobe</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Leizi.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">惊蛰</div>
+                        <div class="role-item-name-en">Leizi</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Nian.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">年</div>
+                        <div class="role-item-name-en">Nian</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Aak.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">阿</div>
+                        <div class="role-item-name-en">Aak</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Hung.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">吽</div>
+                        <div class="role-item-name-en">Hung</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Snowsant.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">雪稚</div>
+                        <div class="role-item-name-en">Sonwsant</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Blaze.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">煌</div>
+                        <div class="role-item-name-en">Blaze</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_GreyThroat.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">灰喉</div>
+                        <div class="role-item-name-en">GreyThroat</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ambriel.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">安比尔</div>
+                        <div class="role-item-name-en">Ambriel</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Broca.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">布洛卡</div>
+                        <div class="role-item-name-en">Broca</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Reed.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">苇草</div>
+                        <div class="role-item-name-en">Reed</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Mostima.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">莫斯提马</div>
+                        <div class="role-item-name-en">Mostima</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Bison.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">拜松</div>
+                        <div class="role-item-name-en">Bison</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_WaaiFu.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">槐虎</div>
+                        <div class="role-item-name-en">Waai Fu</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">快速复活</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_May.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">梅</div>
+                        <div class="role-item-name-en">May</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Breeze.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">微风</div>
+                        <div class="role-item-name-en">Breeze</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ethan.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">伊桑</div>
+                        <div class="role-item-name-en">Ethan</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Magallan.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">麦哲伦</div>
+                        <div class="role-item-name-en">Magallan</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Executor.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">送葬人</div>
+                        <div class="role-item-name-en">Executor</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Flamebringer.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">炎客</div>
+                        <div class="role-item-name-en">Flamebringer</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Vermeil.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">红云</div>
+                        <div class="role-item-name-en">Vermeil</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Dur-nar.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">坚雷</div>
+                        <div class="role-item-name-en">Dur-nar</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Hellagur.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">赫拉格</div>
+                        <div class="role-item-name-en">Hellagur</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Astesia.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">星极</div>
+                        <div class="role-item-name-en">Astesia</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Myrtle.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">桃金娘</div>
+                        <div class="role-item-name-en">Myrtle</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Schwarz.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">黑</div>
+                        <div class="role-item-name-en">Schwarz</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Glaucus.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">格劳克斯</div>
+                        <div class="role-item-name-en">Glaucus</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ceylon.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">锡兰</div>
+                        <div class="role-item-name-en">Ceylon</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Sussurro.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">苏苏洛</div>
+                        <div class="role-item-name-en">Sussurro</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ch\'en.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">陈</div>
+                        <div class="role-item-name-en">Ch'en</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Swire.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">诗怀雅</div>
+                        <div class="role-item-name-en">Swire</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Greyy.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">格雷伊</div>
+                        <div class="role-item-name-en">Greyy</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Spot.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">斑点</div>
+                        <div class="role-item-name-en">Spot</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Popukar.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">泡普卡</div>
+                        <div class="role-item-name-en">Popukar</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Skadi.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">斯卡蒂</div>
+                        <div class="role-item-name-en">Skadi</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Grani.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">格拉尼</div>
+                        <div class="role-item-name-en">Grani</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Nightmare.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">夜魔</div>
+                        <div class="role-item-name-en">Nightmare</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Beehunter.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">猎蜂</div>
+                        <div class="role-item-name-en">Beehunter</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Midnight.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">月见夜</div>
+                        <div class="role-item-name-en">Midnight</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Catapult.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">空爆</div>
+                        <div class="role-item-name-en">Catapult</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Savage.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">暴行</div>
+                        <div class="role-item-name-en">Savage</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_SilverAsh.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">银灰</div>
+                        <div class="role-item-name-en">SilverAsh</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Saria.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">塞雷娅</div>
+                        <div class="role-item-name-en">Saria</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Hoshiguma.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">星熊</div>
+                        <div class="role-item-name-en">Hoshiguma</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Nightingale.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">夜莺</div>
+                        <div class="role-item-name-en">Nightingale</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Shining.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">闪灵</div>
+                        <div class="role-item-name-en">Shining</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Angelina.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">安洁莉娜</div>
+                        <div class="role-item-name-en">Angelina</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Eyjafjalla.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">艾雅法拉</div>
+                        <div class="role-item-name-en">Eyjafjalla</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ifrit.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">伊芙利特</div>
+                        <div class="role-item-name-en">Ifrit</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Siege.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">推进之王</div>
+                        <div class="role-item-name-en">Siege</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Exusiai.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">能天使</div>
+                        <div class="role-item-name-en">Exusiai</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop">高级资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_FEater.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">食铁兽</div>
+                        <div class="role-item-name-en">FEater</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Manticore.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">狮蝎</div>
+                        <div class="role-item-name-en">Manticore</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Sora.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">空</div>
+                        <div class="role-item-name-en">Sora</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Истина.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">真理</div>
+                        <div class="role-item-name-en">Истина</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Pramanix.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">初雪</div>
+                        <div class="role-item-name-en">Pramanix</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Cliffheart.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">崖心</div>
+                        <div class="role-item-name-en">Cliffheart</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Firewatch.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">守林人</div>
+                        <div class="role-item-name-en">Firewatch</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">爆发</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Provence.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">普罗旺斯</div>
+                        <div class="role-item-name-en">Provence</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Vulcan.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">火神</div>
+                        <div class="role-item-name-en">Vulcan</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Croissant.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">可颂</div>
+                        <div class="role-item-name-en">Croissant</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Liskarm.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">雷蛇</div>
+                        <div class="role-item-name-en">Liskarm</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_ProjektRed.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">红</div>
+                        <div class="role-item-name-en">Projekt Red</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">快速复活</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Nearl.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">临光</div>
+                        <div class="role-item-name-en">Nearl</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Warfarin.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">华法琳</div>
+                        <div class="role-item-name-en">Warfarin</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Silence.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">赫默</div>
+                        <div class="role-item-name-en">Silence</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Mayer.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">梅尔</div>
+                        <div class="role-item-name-en">Mayer</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">召唤</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Skyfire.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">天火</div>
+                        <div class="role-item-name-en">Skyfire</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Amiya.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">阿米娅</div>
+                        <div class="role-item-name-en">Amiya</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Meteorite.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">陨星</div>
+                        <div class="role-item-name-en">Meteorite</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Platinum.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">白金</div>
+                        <div class="role-item-name-en">Platinum</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_BluePoison.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">蓝毒</div>
+                        <div class="role-item-name-en">Blue Poison</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Specter.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">幽灵鲨</div>
+                        <div class="role-item-name-en">Specter</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Lappland.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">拉普兰德</div>
+                        <div class="role-item-name-en">Lappland</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Indra.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">因陀罗</div>
+                        <div class="role-item-name-en">Indra</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Franka.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">弗兰卡</div>
+                        <div class="role-item-name-en">Franka</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Texas.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">德克萨斯</div>
+                        <div class="role-item-name-en">Texas</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">控场</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Зима.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">凛冬</div>
+                        <div class="role-item-name-en">Зима</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ptilopsis.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">白面鸮</div>
+                        <div class="role-item-name-en">Ptilopsis</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">资深干员</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Shaw.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">阿消</div>
+                        <div class="role-item-name-en">Shaw</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Earthspirit.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">地灵</div>
+                        <div class="role-item-name-en">Earthspirit</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Deepcolor.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">深海色</div>
+                        <div class="role-item-name-en">Deepcolor</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">召唤</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Гум.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">古米</div>
+                        <div class="role-item-name-en">Гум</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Cuora.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">蛇屠箱</div>
+                        <div class="role-item-name-en">Cuora</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Matterhorn.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">角峰</div>
+                        <div class="role-item-name-en">Matterhorn</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Perfumer.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">调香师</div>
+                        <div class="role-item-name-en">Perfumer</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Gavial.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">嘉维尔</div>
+                        <div class="role-item-name-en">Gavial</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Myrrh.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">末药</div>
+                        <div class="role-item-name-en">Myrrh</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Rope.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">暗索</div>
+                        <div class="role-item-name-en">Rope</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">位移</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Gravel.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">砾</div>
+                        <div class="role-item-name-en">Gravel</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">快速复活</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">特种 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Mousse.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">慕斯</div>
+                        <div class="role-item-name-en">Mousse</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Estelle.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">艾斯黛尔</div>
+                        <div class="role-item-name-en">Estelle</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Frostleaf.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">霜叶</div>
+                        <div class="role-item-name-en">Frostleaf</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Matoimaru.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">缠丸</div>
+                        <div class="role-item-name-en">Matoimaru</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Dobermann.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">杜宾</div>
+                        <div class="role-item-name-en">Dobermann</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Vigna.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">红豆</div>
+                        <div class="role-item-name-en">Vigna</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Scavenger.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">清道夫</div>
+                        <div class="role-item-name-en">Scavenger</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Courier.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">讯使</div>
+                        <div class="role-item-name-en">Courier</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_ShiraYuki.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">白雪</div>
+                        <div class="role-item-name-en">ShiraYuki</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Meteor.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">流星</div>
+                        <div class="role-item-name-en">Meteor</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Jessica.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">杰西卡</div>
+                        <div class="role-item-name-en">Jessica</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Gitano.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">远山</div>
+                        <div class="role-item-name-en">Gitano</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Haze.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">夜烟</div>
+                        <div class="role-item-name-en">Haze</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">削弱</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Orchid.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">梓兰</div>
+                        <div class="role-item-name-en">Orchid</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">减速</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">辅助 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Steward.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">史都华德</div>
+                        <div class="role-item-name-en">Steward</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Ansel.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">安塞尔</div>
+                        <div class="role-item-name-en">Ansel</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Hibiscus.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">芙蓉</div>
+                        <div class="role-item-name-en">Hibiscus</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Lava.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">炎熔</div>
+                        <div class="role-item-name-en">Lava</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">群攻</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Adnachiel.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">安德切尔</div>
+                        <div class="role-item-name-en">Adnachiel</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Kroos.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">克洛丝</div>
+                        <div class="role-item-name-en">Kroos</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Beagle.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">米格鲁</div>
+                        <div class="role-item-name-en">Beagle</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Cardigan.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">卡缇</div>
+                        <div class="role-item-name-en">Cardigan</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">防护</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Melantha.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">玫兰莎</div>
+                        <div class="role-item-name-en">Melantha</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-2">生存</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Plume.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">翎羽</div>
+                        <div class="role-item-name-en">Plume</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">输出</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Vanilla.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">香草</div>
+                        <div class="role-item-name-en">Vanilla</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Fang.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">芬</div>
+                        <div class="role-item-name-en">Fang</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-4">费用回复</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_12F.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">12F</div>
+                        <div class="role-item-name-en">12F</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">新手</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Durin.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">杜林</div>
+                        <div class="role-item-name-en">Durin</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">新手</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">术师 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Rangers.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">巡林者</div>
+                        <div class="role-item-name-en">Rangers</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">新手</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">狙击 | 远</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_NoirCorne.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">黑角</div>
+                        <div class="role-item-name-en">Noir Corne</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">新手</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">重装 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Yato.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">夜刀</div>
+                        <div class="role-item-name-en">Yato</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">新手</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">先锋 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Castle-3.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">Castle-3</div>
+                        <div class="role-item-name-en">Castle-3</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">支援</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">支援机械</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">近卫 | 近</div>
+                    </div>
+                </a>
+            </div>
+            <div class="role-item">
+                <a href="">
+                    <div class="image-inner"
+                        style="background-image: url('source/character/headportrait/hp_Lancet-2.webp');"></div>
+                    <div class="role-item-name">
+                        <div class="role-item-name-ch">Lancet-2</div>
+                        <div class="role-item-name-en">Lancet-2</div>
+                    </div>
+                    <div class="role-item-tag">
+                        <div class="role-item-tag-pop role-item-tag-pop-2">治疗</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-4">支援机械</div>
+                        <div class="role-item-tag-pop role-item-tag-pop-3">医疗 | 远</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 回到顶部 -->
+        <button id="backTop" style="display: none;" onclick="backTop()">
+            <div id="triangle"></div>
+        </button>
+    </div>
+</body>
+
+</html>

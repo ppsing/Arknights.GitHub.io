@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 引入字体 */
+@font-face {
+    font-family: "FZYaSong-GBK";
+    src: url(../source/font_family/FZXYSK.TTF);
+}
+
+/* 取消按钮默认样式 */
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-color: none;
+}
+
+/* 设置横线 */
+hr {
+    height: 5px;
+    border: none;
+    background-color: #E5E5E5;
+}
+
+/* a标签 */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 导航栏 */
+#top-menu {
+    height: 50px;
+    width: 100%;
+    background-color: #515151;
+}
+
+/* 导航栏中a标签 */
+#top-menu a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    color: #ffffff;
+}
+
+/* 鼠标悬停导航栏时样式 */
+#top-menu a:hover {
+    color: #FFD04B;
+    border-bottom: 3px solid;
+}
+
+/* 导航栏中的文字 */
+.nav {
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* 主体 */
+#section {
+    margin: 20px 10% 0 10%;
+}
+
+/* 主题头部 */
+#title-container {
+    margin-bottom: 20px;
+    height: 20px;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    background-color: #000000;
+}
+
+/* 头部文字样式 */
+#title {
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* 标签容器 */
+#tag-container {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* 标签样式 */
+.tag {
+    margin-bottom: 10px;
+    padding-right: 10px;
+    height: 40px;
+}
+
+/* 标签分支 */
+.tag-branch {
+    float: left;
+    margin-right: 10px;
+    border: 3px solid #909399;
+    border-radius: 3px;
+    width: 60px;
+    height: 30px;
+    background-color: #909399;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    cursor: default;
+}
+
+/* 标签中按钮 */
+.tag-button {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 33px;
+    background-color: #ffffff;
+    border: 1px solid #DCDFE6;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+}
+
+/* 4个字按钮 */
+.tag-button-4 {
+    width: 100px;
+}
+
+/* 6个字按钮 */
+.tag-button-6 {
+    width: 120px;
+}
+
+/* 鼠标悬停在按钮上 */
+.tag-button:hover {
+    border: 1px solid #909399;
+}
+
+/* 可以被鼠标点击的按钮 */
+#tag-click {
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #909399;
+    color: #ffffff;
+}
+
+/* 隐藏标签页的样式 */
+#tag-hide {
+    display: none;
+    position: absolute;
+    margin: 50px 0 auto 50px;
+    padding: 10px 10px;
+    width: 800px;
+    height: 120px;
+    border: 1px solid #F3F3F3;
+    border-radius: 3px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+/* 具体干员列表容器 */
+#role-container {
+    height: 4600px;
+}
+
+/* 每个干员块 */
+.role-item {
+    display: block;
+    float: left;
+    position: relative;
+    left: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    width: 120px;
+    height: 140px;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+
+/* 干员头像 */
+.image-inner {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 鼠标悬停图片移动 */
+.role-item:hover {
+    filter: drop-shadow(1px 1px 1px #818181);
+    transform: translateX(-20px);
+    padding-right: 60px;
+}
+
+/* 干员名字 */
+.role-item-name {
+    position: absolute;
+    margin-top: -43px;
+    padding-left: 3px;
+    width: 120px;
+    height: 43px;
+    color: #ffffff;
+    text-shadow: 1px 0 2px #313131;
+}
+
+/* 干员名字中文 */
+.role-item-name-ch {
+    font-size: 18px;
+    font-family: FZYaSong-GBK;
+}
+
+/* 干员英文名字 */
+.role-item-name-en {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* 在干员头像旁的各个标签 */
+.role-item-tag {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 100px;
+    height: 120px;
+    transition: .5s ease-out;
+    z-index: -1;
+}
+
+/* 鼠标悬停，干员头像旁弹出标签 */
+.role-item:hover .role-item-tag {
+    transform: translateX(106px);
+}
+
+/* 干员头像旁弹出的单个标签的样式 */
+.role-item-tag-pop {
+    width: 90px;
+    height: 16px;
+    margin-bottom: 4px;
+    padding: 1px;
+    border: 1px solid #909399;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    background-color: #ffffff;
+    color: #909399;
+    box-shadow: 1px 1px #A8A8A8;
+}
+
+/* tag为两个字 */
+.role-item-tag-pop-2 {
+    width: 45px;
+}
+
+/* tag为4个子 */
+.role-item-tag-pop-4 {
+    width: 68px;
+}
+
+/* tag为三个字加一个竖线 */
+.role-item-tag-pop-3 {
+    width: 65px;
+}
+
+#backTop {
+    position: fixed;
+    left: 1320px;
+    top: 630px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #F7F7F7;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px #E5E5E5;
+}
+
+#triangle {
+    position: relative;
+    left: 12px;
+    bottom: 4px;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: transparent transparent #000000;
+}
