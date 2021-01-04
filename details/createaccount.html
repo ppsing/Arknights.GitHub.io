@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArknightsData | 注册</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div id="top-menu">
+        <a href="../index.html">
+            <div class="nav">Arknights Data</div>
+        </a>
+        <a href="">
+            <div class="nav">敌人档案</div>
+        </a>
+        <a href="">
+            <div class="nav">时装回廊</div>
+        </a>
+        <a href="">
+            <div class="nav">活动一览</div>
+        </a>
+        <a href="">
+            <div class="nav">道具资料</div>
+        </a>
+        <a href="">
+            <div class="nav">剧情记录</div>
+        </a>
+        <a href="details/log.html">
+            <div class="nav">登录</div>
+        </a>
+    </div>
+    <!-- 登录界面 -->
+    <div id="section">
+        <div id="box-border">
+            <div id="title"><span>注册</span></div>
+            <div id="userloginform">
+                <!-- 注册表单 -->
+                <form action="" method="POST" name="userlogin2" id="form">
+                    <div>
+                        <!-- 用户名 -->
+                        <div class="form-items">
+                            <label for="Name2">用户名</label>
+                            <div>
+                                <input type="text" name="Name" id="Name2" size="20" class="input-ui"
+                                    placeholder="请输入您的姓名" tabindex="1" required>
+                            </div>
+                        </div>
+                        <!-- 密码 -->
+                        <div class="form-items">
+                            <label for="Password2">密码</label>
+                            <div>
+                                <input type="password" name="Password" id="Password2" size="20" class="input-ui"
+                                    placeholder="请输入密码" tabindex="2" required>
+                            </div>
+                        </div>
+                        <!-- 确认密码 -->
+                        <div class="form-items">
+                            <label for="Retype">确认密码</label>
+                            <div><input type="password" name="retype" id="Retype" size="20" class="input-ui" placeholder="请再次输入密码" tabindex="3" required></div>
+                        </div>
+                        <!-- 电子邮件 -->
+                        <div class="form-items">
+                            <label for="Email">电子邮件地址</label>
+                            <div>
+                                <input type="email" name="email" id="Email" size="20" class="input-ui"
+                                    placeholder="请输入您的电子邮件地址" tabindex="4">
+                            </div>
+                        </div>
+                        <!-- 创建按钮 -->
+                        <div class="form-items">
+                            <button class="button-ui" id="CreateAccount" type="submit" name="createaccount" value="创建您的账户"
+                                tabindex="5">创建您的账户</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

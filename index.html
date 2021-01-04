@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歌豚 | ArknightsData | ppsingsongs | 学习项目</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
     <!-- 导航栏 -->
     <div id="top-menu">
-        <a href="">
+        <a href="index.html">
             <div class="nav">Arknights Data</div>
         </a>
         <a href="">
@@ -31,11 +31,49 @@
         <a href="">
             <div class="nav">剧情记录</div>
         </a>
+        <a href="details/login.html">
+            <div class="nav">登录</div>
+        </a>
     </div>
     <div id="section">
+        <!-- 轮播图 -->
+        <div class="swiper-contione">
+			<div class="swiper">
+				<div class="swiper-item">
+					<img src="http://prts.wiki/images/thumb/c/c3/%E6%B4%BB%E5%8A%A8%E9%A2%84%E5%91%8A_%E6%AD%A4%E5%9C%B0%E4%B9%8B%E5%A4%96_01.jpg/1170px-%E6%B4%BB%E5%8A%A8%E9%A2%84%E5%91%8A_%E6%AD%A4%E5%9C%B0%E4%B9%8B%E5%A4%96_01.jpg">
+					<p>故事集</p>
+				</div>
+				<div class="swiper-item">
+					<img src="http://prts.wiki/images/7/7f/%E6%B4%BB%E5%8A%A8%E9%A2%84%E5%91%8A_%E8%B7%A8%E5%B9%B4%E7%BA%AA%E5%BF%B52021_01.jpg">
+					<p>签到活动</p>
+				</div>
+				<div class="swiper-item">
+					<img src="https://ak.hypergryph.com/upload/images/20201210/1d7007d2370dddc044c6371c2e304b6e.JPG">
+					<p>SideStory</p>
+				</div>
+				<div class="swiper-item">
+					<img src="https://ak-fs.hypergryph.com/announce/images/20201126/6f62b8ac754781ec7959353fe4335f33.jpg">
+					<p>活动复刻</p>
+				</div>
+			</div>
+			<div class="swiper-point">
+				<div class="swiper-point-item">
+					<div class="point active"></div>
+					<div class="point"></div>
+					<div class="point"></div>
+					<div class="point"></div>
+				</div>
+			</div>
+			<div class="swiper-left">
+				<img src="source/icon/left.png">
+			</div>
+			<div class="swiper-right">
+				<img src="source/icon/right.png">
+			</div>
+		</div>
         <!-- 干员列表头部 -->
-        <div id="title-container">
-            <div id="title">干员列表</div>
+        <div class="title-container">
+            <div class="title">干员列表</div>
         </div>
         <!-- 干员tag界面 -->
         <div id="tag-container">
@@ -105,8 +143,8 @@
         </div>
         <!-- 具体列表 -->
         <div id="role-container">
-            <div class="role-item">
-                <a href="">
+            <div class="role-item ">
+                <a href="details/blemishine.html" target="_blank">
                     <div class="image-inner"
                         style="background-image: url('source/character/headportrait/hp_Blemishine.webp');"></div>
                     <div class="role-item-name">
@@ -122,7 +160,7 @@
                     </div>
                 </a>
             </div>
-            <div class="role-item">
+            <div class="role-item ">
                 <a href="">
                     <div class="image-inner"
                         style="background-image: url('source/character/headportrait/hp_Aosta.webp');"></div>
@@ -137,7 +175,7 @@
                     </div>
                 </a>
             </div>
-            <div class="role-item">
+            <div class="role-item ">
                 <a href="">
                     <div class="image-inner"
                         style="background-image: url('source/character/headportrait/hp_Whislash.webp');"></div>
@@ -154,7 +192,7 @@
                 </a>
 
             </div>
-            <div class="role-item">
+            <div class="role-item ">
                 <a href="">
                     <div class="image-inner"
                         style="background-image: url('source/character/headportrait/hp_Bubble.webp');"></div>
@@ -2761,6 +2799,85 @@
             <div id="triangle"></div>
         </button>
     </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+		class Swiper {
+			constructor() {
+				this.w = $('.swiper-item').width();
+				this.num = 0;
+				this.len = $('.swiper .swiper-item').length - 1;
+				this.timer = null;
+			}
+			init() {
+				//设置定时器
+				this.setTime();
+				//滑上停止定时器
+				this.hover();
+				//点击指示
+				this.pointClick();
+				//点击左右箭头
+				this.lrClick();
+			}
+			setTime() {
+				this.timer = setInterval(() => {
+					this.num++;	
+					if (this.num > this.len) {
+						this.num = 0;
+					}
+					let cssTrx = -this.num * this.w;
+					$('.swiper-point-item .point').eq(this.num).addClass('active').siblings().removeClass('active');
+					$('.swiper').css({transform: `translateX(${cssTrx}px)`})
+				}, 3000)
+			}
+			hover() {
+				$('.swiper-contione').hover(() => {
+					clearInterval(this.timer)
+				}, () => {
+					this.setTime();
+				});
+			}
+			pointClick() {
+				let that = this;
+				$('.swiper-point-item .point').click(function() {
+					that.num = $(this).index();
+					let cssTrx = -that.num * that.w;
+					$(this).addClass('active').siblings().removeClass('active');
+					$('.swiper').css({
+						transform: `translateX(${cssTrx}px)`
+					})
+				})
+			}
+			lrClick() {
+				$('.swiper-left img').click(() => {
+					this.num--;
+					if (this.num < 0) {
+						this.num = this.len;
+					};
+					console.log(this.num)
+					let cssTrx = -this.num * this.w;
+					$('.swiper-point-item .point').eq(this.num).addClass('active').siblings().removeClass('active');
+					$('.swiper').css({
+						transform: `translateX(${cssTrx}px)`
+					})
+				});
+				
+				$('.swiper-right img').click(() => {
+					this.num++;
+					if (this.num > this.len) {
+						this.num = 0;
+					}
+					let cssTrx = -this.num * this.w;
+					$('.swiper-point-item .point').eq(this.num).addClass('active').siblings().removeClass('active');
+					$('.swiper').css({
+						transform: `translateX(${cssTrx}px)`
+					})
+				})
+			}
+		}
+		let sw = new Swiper();
+		sw.init();
+	</script>
 </body>
 
 </html>

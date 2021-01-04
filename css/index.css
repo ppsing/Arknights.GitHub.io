@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-/* 引入字体 */
-@font-face {
-    font-family: "FZYaSong-GBK";
-    src: url(../source/font_family/FZXYSK.TTF);
-}
-
 /* 取消按钮默认样式 */
 button {
     border: none;
@@ -22,65 +16,6 @@ hr {
     height: 5px;
     border: none;
     background-color: #E5E5E5;
-}
-
-/* a标签 */
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 导航栏 */
-#top-menu {
-    height: 50px;
-    width: 100%;
-    background-color: #515151;
-}
-
-/* 导航栏中a标签 */
-#top-menu a {
-    display: block;
-    text-decoration: none;
-    float: left;
-    color: #ffffff;
-}
-
-/* 鼠标悬停导航栏时样式 */
-#top-menu a:hover {
-    color: #FFD04B;
-    border-bottom: 3px solid;
-}
-
-/* 导航栏中的文字 */
-.nav {
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    line-height: 50px;
-}
-
-/* 主体 */
-#section {
-    margin: 20px 10% 0 10%;
-}
-
-/* 主题头部 */
-#title-container {
-    margin-bottom: 20px;
-    height: 20px;
-    width: 100%;
-    border: 2px solid #000000;
-    border-radius: 3px;
-    background-color: #000000;
-}
-
-/* 头部文字样式 */
-#title {
-    padding-left: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 20px;
 }
 
 /* 标签容器 */
@@ -167,15 +102,17 @@ a {
 
 /* 具体干员列表容器 */
 #role-container {
-    height: 4600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 50px;
+    width: 100%;
+    justify-content: center;
 }
 
 /* 每个干员块 */
 .role-item {
-    display: block;
-    float: left;
+    display: inline-block;
     position: relative;
-    left: 40px;
     margin: 10px;
     padding: 10px;
     border: 1px solid transparent;
@@ -270,25 +207,104 @@ a {
     width: 65px;
 }
 
-#backTop {
-    position: fixed;
-    left: 1320px;
-    top: 630px;
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    border: 1px solid #F7F7F7;
-    border-radius: 40px;
-    cursor: pointer;
-    box-shadow: 1px 1px #E5E5E5;
+/* 轮播图样式 */
+.swiper-contione {
+    width: 936px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
 }
 
-#triangle {
+.swiper {
+    width: 9999999px;
+    height: 400px;
+    transition: all 1s ease;
+}
+
+.swiper-item {
+    width: 936px;
+    height: 300px;
+    float: left;
     position: relative;
-    left: 12px;
-    bottom: 4px;
-    width: 0;
-    height: 0;
-    border: 8px solid;
-    border-color: transparent transparent #000000;
+}
+
+.swiper-item img {
+    width: 936px;
+    height: 300px;
+}
+
+.swiper-item p {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.swiper-point {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.point {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    margin-right: 5px;
+    float: left;
+}
+
+.point.active {
+    background: #fff;
+}
+
+.swiper-left {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.swiper-right {
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.swiper-left img,
+.swiper-right img {
+    cursor: pointer;
+}
+
+.swiper-contione:hover .swiper-left {
+    left: 0;
+}
+
+.swiper-contione:hover .swiper-right {
+    right: 0;
 }

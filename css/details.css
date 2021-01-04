@@ -1,0 +1,653 @@
+.r_card-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#r_card-container-border {
+    border: 1px solid #ebeef5;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #303133;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
+}
+
+#r_card-body {
+    padding: 20px;
+}
+
+#r_card-head {
+    position: relative;
+    height: 150px;
+    z-index: 1px;
+}
+
+#r_card-headportrait {
+    position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#r_card-title {
+    margin-left: 20px;
+    display: block;
+    float: left;
+}
+
+#title-first {
+    font-size: 50px;
+    margin: 0;
+}
+
+#title-first-ch {
+    color: #000000;
+    font-family: "FZYaSong-GBK";
+}
+
+#title-first-en {
+    color: #969696;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#title-second {
+    margin-bottom: 5px;
+}
+
+#r_card-logo {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+#title-second-ch {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    font-family: "FZYaSong-GBK";
+    font-size: 36px;
+    color: #303133;
+}
+
+#r_card-star {
+    float: left;
+    position: relative;
+    top: 5px;
+    width: 200px;
+    height: 40px;
+}
+
+#title-third {
+    clear: both;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* 人物下方小字 */
+.headportrait-down {
+    clear: both;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #B0A8B0;
+}
+
+/* 右下方小字 */
+#headportrait-rightdown {
+    position: absolute;
+    top: 180px;
+    right: 1px;
+}
+
+/* 人物阵营图标 */
+#r_card-camp {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+    align-items: center;
+}
+
+/* 右上角人物tags */
+#r_card-tags {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    z-index: 1;
+    font-size: 12px;
+}
+
+/* 右上角人物tag容器 */
+.r_card-tags-container {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: 1px solid #414141;
+    border-radius: 3px;
+    background-color: #414141;
+    color: #ffffff;
+    width: 59px;
+    height: 36px;
+}
+
+/* 人物属性容器 */
+.attribute-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 人物属性-左：精英、等级、潜能 */
+#attribute-left {
+    margin: 0;
+    padding: 12px 0 12px 10px;
+    width: 400px;
+    justify-items: center;
+    min-width: 335px;
+}
+
+.attribute-left-item {
+    margin-bottom: 12px;
+}
+
+/* 按钮样式 */
+.left-button {
+    display: inline-block;
+    width: 40px;
+    height: 28px;
+    line-height: 1px;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-left: 10px;
+    background-color: hsla(0, 0%, 67.5%, .34);
+}
+
+/* 鼠标悬停在按钮上 */
+.left-button:hover {
+    color: #ffd04b;
+    background-color: #313131;
+    border-bottom: 2px solid #ffd04b;
+}
+
+/* 人物属性中容器 */
+#attribute-mid {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 12px 0 12px 10px;
+    width: 400px;
+    justify-items: center;
+    overflow: hidden;
+    border-right: 2px solid #D8D8D8;
+}
+
+/* 人物属性中详细 */
+.attribute-details-container {
+    margin: 10px 0;
+    width: 48%;
+    max-width: 220px;
+}
+
+/* 黑底白字设置 */
+.details-title-container {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    justify-items: center;
+    margin: 0;
+    box-shadow: 1px 1px 2px 1px #3a3a4f;
+}
+
+/* 黑底白字设置 */
+.details-title {
+    text-align: 100%;
+    line-height: 100%;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/* 属性数值 */
+.attribute-details-value {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding: 0;
+}
+
+/* 属性详细：右侧攻击范围 */
+#attribute-right {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex: 0.5;
+}
+
+/* 图标容器 */
+.gird-container {
+    border-radius: 1px;
+    padding: 2px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 字体 */
+.status-range-title {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* 图标实现 */
+.gird-row {
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.gird-col {
+    display: inline-block;
+    background-color: rgba(78, 78, 78, .5);
+    border: 4px solid rgba(78, 78, 78, .5);
+    margin: 2px;
+    box-sizing: border-box;
+    max-width: 50px
+}
+
+.gird-hit {
+    background-color: #fff;
+}
+
+/* 人物天赋容器 */
+.talent-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 700px;
+}
+
+/* 天赋左右两部分 */
+.talent {
+    width: 45%;
+    margin: 10px 0;
+    position: relative;
+}
+
+/* 左半部分标题和描述 */
+.talent-title {
+    border-bottom: 1px solid #818181;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.talent-desc {
+    padding: 5px;
+    position: relative;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.talent-desc-content {
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.talent-desc-condition {
+    margin-right: 10px;
+    width: 100px;
+    word-break: keep-all;
+}
+
+/* 技能详情及消耗 */
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    padding-top: 70px;
+    position: relative;
+    --swiper-theme-color: #f49800;
+    --scrollBarWidth: 180px;
+}
+
+.swiper-container-autoheight {
+    height: auto;
+}
+
+.skill-panel {
+    margin-bottom: 50px;
+}
+
+/* 按钮 */
+.swiper-active-title {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 1%;
+    width: 98%;
+}
+
+/* 详细内容容器 */
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-container.swiper-slide {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.skill-container {
+    position: relative;
+    display: flex;
+    margin: 20px 0 0;
+    align-items: stretch;
+}
+
+/* 潜能 */
+.potency-container {
+    padding: 0 10px 20px;
+    padding-left: 10px;
+}
+
+.potency-lv {
+    padding-right: 5px;
+}
+
+/* 材料消耗容器 */
+.evolvcost-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px 20px;
+}
+
+/* 材料消耗两部分 */
+.evolvcost-list {
+    position: relative;
+    margin: 30px 0;
+    flex: 1;
+    display: flex;
+}
+
+/* 材料消耗文字 */
+.evolvcost-list-title {
+    height: 100%;
+    width: 90px;
+    border-right: 1px solid hsla(0, 0%, 62%, .4);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+/* 图标 */
+.evolvcost-list-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+/* 单个图标 */
+.evolvcost-list-item-one {
+    width: 100px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* 基建技能容器 */
+.talent-wrapper-skill {
+    min-width: auto;
+    padding: 0 10px 20px;
+    margin-bottom: 20px;
+}
+
+.talent-desc-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 1px solid hsla(0, 0%, 65.9%, .3);
+    width: 80%;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+/* 字体 */
+.room-type {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.talent-desc-content-item {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+/* 干员资料部分 */
+.swiper-container-autoheight {
+    height: auto;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+    align-items: flex-start;
+    transition-property: transform, height;
+}
+
+.swiper-container .swiper-slide {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.char-base-info-container {
+    display: flex;
+    margin-bottom: 70px;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.char-half-container {
+    width: 110px;
+    height: 220px;
+    position: relative;
+    font-size: 0;
+    align-items: flex-end;
+    display: flex;
+}
+
+.char-half-container:before,
+.char-profile-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 10px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .31), inset 0 2px 6px 0 rgba(0, 0, 0, .47);
+}
+
+.info-painter-cv {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.info-base-container {
+    max-width: 250px;
+}
+
+.info-base-container+.info-base-container {
+    padding-left: 20px;
+}
+
+.info-painter-cv-item {
+    margin-top: 10px;
+}
+
+.long {
+    white-space: nowrap;
+}
+
+.base-content-title {
+    color: #fff;
+    background-color: #313131;
+    text-align: center;
+    font-size: 100%;
+    line-height: 100%;
+    border-radius: 2px;
+    width: 80px;
+    padding: 2px 0;
+    box-shadow: 1px 1px 2px 1px #3a3a4f;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.long .base-content-title {
+    width: auto;
+    padding: 2px 10px;
+    margin: 5px 5px 5px 0;
+    display: inline-block;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+.long .base-content-value {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding: 0;
+}
+
+.long-content .base-content-value {
+    display: block;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+}
+
+.info-token-desc {
+    margin: 20px 0 50px;
+}
+
+/* 语音资料 */
+.info-word-wrapper {
+    padding: 0 10px;
+}
+
+.el-slider:after,
+.el-slider:before {
+    display: table;
+    content: "";
+}
+
+.el-slider:after {
+    clear: both;
+}
+
+.el-slider:after,
+.el-slider:before {
+    display: table;
+    content: "";
+}
+
+.el-slider__runway {
+    width: 100%;
+    height: 6px;
+    margin: 16px 0;
+    background-color: #e4e7ed;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.el-slider__bar {
+    height: 6px;
+    background-color: #313131;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: absolute;
+}
+
+.el-slider__button-wrapper {
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    z-index: 1001;
+    top: -15px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: transparent;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: normal;
+}
+
+.el-slider__button {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #313131;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.el-slider__button-wrapper .el-tooltip,
+.el-slider__button-wrapper:after {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* 语音记录 */
+.info-word-audio {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-word-audio-title {
+    padding-right: 5px;
+}
