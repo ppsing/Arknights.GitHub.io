@@ -62,8 +62,10 @@
                         </div>
                         <!-- 登录按钮 -->
                         <div class="form-items">
-                            <button class="button-ui" id="LoginAttempt" type="submit" name="loginattempt" value="登录"
-                                tabindex="3" onclick="saveCookie()">登录</button>
+                            <a href="../index.html">
+                                <button class="button-ui" id="LoginAttempt" type="submit" name="loginattempt" value="登录"
+                                    tabindex="3" onclick="saveCookie()">登录</button>
+                            </a>
                         </div>
                         <!-- 账户注册 -->
                         <div class="form-items">
@@ -124,8 +126,6 @@
                 setCookie(UName.id, UName.value, 30);
                 setCookie(PName.id, PName.value, 30);
             }
-
-            window.location.href='index.html';
         }
     </script>
 </body>
