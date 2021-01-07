@@ -1119,7 +1119,7 @@
                     <tr>
                         <td><input type="checkbox" name="item" /></td>
                         <td>1</td>
-                        <td>啊沙发沙发</td>
+                        <td>瑕光本人</td>
                         <td>未来可期</td>
                         <td>2020-12-25</td>
                         <td>
@@ -1156,6 +1156,55 @@
                     </tr>
                 </table>
                 </form>
+        </div>
+        <!-- 标题：评论区 -->
+        <div class="title-container">
+            <div class="title"><span>评论区</span></div>
+        </div>
+        <!-- 评论区 -->
+        <div class="container">
+            <div class="comment-send">
+                <span class="comment-avatar">
+                    <img src="../source/common/avatar1.jpg" alt="avatar">
+                </span>
+                <textarea class="comment-send-input" id="commentInput" cols="80" rows="5"
+                    placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。"></textarea>
+                <div class="comment-send-button" id="commentSubmit">发表评论</div>
+            </div>
+            <div class="comment-list" id="commentList">
+                <div class="comment">
+                    <span class="comment-avatar">
+                        <img src="../source/common/avatar1.jpg" alt="avatar">
+                    </span>
+                    <div class="comment-content">
+                        <p class="comment-content-name">老陈</p>
+                        <p class="comment-content-article">一刀就把般若砍断了</p>
+                        <p class="comment-content-footer">
+                            <span class="comment-content-footer-id">#2</span>
+                            <span class="comment-content-footer-device">来自龙门客户端</span>
+                            <span class="comment-content-footer-timestamp">2020-5-1 15:00</span>
+                        </p>
+                        <a href="javascript:void(0);" class="delete">删除</a>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+                <div class="comment comment-bottom">
+                    <span class="comment-avatar">
+                        <img src="../source/common/avatar2.jpg" alt="avatar">
+                    </span>
+                    <div class="comment-content">
+                        <p class="comment-content-name">鬼姐</p>
+                        <p class="comment-content-article">老陈你不讲武德</p>
+                        <p class="comment-content-footer">
+                            <span class="comment-content-footer-id">#1</span>
+                            <span class="comment-content-footer-device">来自龙门客户端</span>
+                            <span class="comment-content-footer-timestamp">2020-5-1 14:05</span>
+                        </p>
+                        <a href="javascript:void(0);" class="delete">删除</a>
+                    </div>
+                    <div class="cls"></div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
@@ -1263,6 +1312,7 @@
             oMytable.rows[rowIndex].cells[5].innerHTML = oAddre.value;
         }
     </script>
+    <script src="../js/details.js"></script>
 </body>
 
 </html>

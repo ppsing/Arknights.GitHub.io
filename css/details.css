@@ -651,3 +651,144 @@
 .info-word-audio-title {
     padding-right: 5px;
 }
+
+/* 评论区 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+.cls {
+    clear: both;
+}
+
+.container {
+    width: 780px;
+    min-height: 10px;
+    margin: 50px auto;
+    /* border: 1px solid #dfdfdf; */
+}
+
+.comment {
+    min-height: 60px;
+    /* border: 1px solid red; */
+}
+
+.comment-avatar img {
+    margin: 20px 0 0 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.comment-content {
+    position: relative;
+    float: right;
+    width: 685px;
+    padding-top: 15px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.comment-content .delete {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: -15px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #333;
+    text-decoration: none;
+    transition: background ease-out 0.3s;
+}
+
+.comment-content .delete:hover {
+    background: #1aa2d4;
+    border-color: #1aa2d4;
+    color: #fff;
+}
+
+.comment-bottom>.comment-content {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.comment-content-name {
+    color: #6d757a;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.comment-content-article {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.comment-content-footer {
+    color: #6d757a;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.comment-content-footer span {
+    margin-right: 10px;
+}
+
+.comment-send {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.comment-send-input {
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.3s;
+    position: absolute;
+    top: 15px;
+    left: 95px;
+    resize: none;
+    width: 605px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 4px;
+    background: #f4f5f7;
+    border: 1px solid #e5e9ef;
+}
+
+.comment-send-input:hover,
+.comment-send-input:active {
+    background: #fff;
+    color: #555;
+}
+
+.comment-send-button {
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    width: 65px;
+    height: 65px;
+    padding: 12px 15px;
+    border-radius: 4px;
+    background: #1aa2d4;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.comment-send-button:hover {
+    background: #1eb6e3;
+}
