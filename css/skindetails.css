@@ -1,0 +1,183 @@
+h2 {
+    margin-bottom: 0.25em;
+    padding: 0;
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    line-height: 1.3;
+}
+
+.brandswiper-container {
+    position: relative;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.brandswiper-controler {
+    width: 1150px;
+    height: auto;
+    background: white;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .3));
+}
+
+.swiper-container {
+    position: relative;
+    width: 800px;
+    height: auto;
+    display: inline-block;
+}
+
+.brand-container {
+    vertical-align: top;
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    font-size: 10px;
+    position: relative;
+}
+
+.brand-content-logo {
+    position: relative;
+    right: 160px;
+    bottom: 90px;
+    filter: invert();
+    width: 350px;
+    height: 270px;
+}
+
+.brand-content-logotitle {
+    position: absolute;
+    right: 20px;
+    left: auto;
+    height: 26px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    top: 290px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.brand-content-text {
+    position: absolute;
+    top: 330px;
+    color: black;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 37px;
+    padding-right: 37px;
+    line-height: 21px;
+}
+
+.brand-content-logo img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 35px 70px 35px 70px;
+}
+
+/* 系列时装 */
+.center-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.char-skin-container {
+    width: 120px;
+    height: 276px;
+    display: inline-block;
+    margin: 8px;
+    font-size: 0px;
+}
+
+.skin-wrapper {
+    width: 120px;
+    height: 276px;
+    background-color: white;
+    position: relative;
+    margin: 0px;
+    font-size: 0px;
+    display: inline-block;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, .5));
+    cursor: pointer;
+}
+
+.skin-wrapper:hover {
+    background-color: #313131;
+}
+
+.white-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    width: 120px;
+    height: 240px;
+    z-index: 0;
+}
+
+.skin-wrapper:hover a .white-bg {
+    background-color: #313131;
+}
+
+.char-img-wrapper {
+    position: absolute;
+    bottom: 36px;
+    left: 0px;
+    width: 120px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.char {
+    position: relative;
+    z-index: 1;
+}
+
+.char-name {
+    position: absolute;
+    top: 244px;
+    left: 4px;
+    color: #5b5b5b;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.skin-name {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    color: #5b5b5b;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.skin-table {
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    width: 800px;
+}
+
+.skin-table>tr>th,
+.skin-table>tr>td,
+.skin-table>*>tr>th,
+.skin-table>*>tr>td {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
